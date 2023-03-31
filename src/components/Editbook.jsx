@@ -12,7 +12,7 @@ const Editbook=()=>{
     console.log(id)
     const handlesubmit=(e)=>{
         e.preventDefault()
-        axios.put(`http://localhost:5000/api/v1/book/${id}`,Data,{
+        axios.put(`https://book-list-backend-7gjb.onrender.com/api/v1/book/${id}`,Data,{
             headers:{
                 "Authorization":token
             }

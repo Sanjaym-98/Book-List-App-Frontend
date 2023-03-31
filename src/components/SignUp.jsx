@@ -12,7 +12,7 @@ const SignUp =()=>{
         }else if(data.password !== data.confirmpassword){
             alert("password and confirmpassword is not same")
         }else {
-            axios.post("http://localhost:5000/api/v1/register",data)
+            axios.post("https://book-list-backend-7gjb.onrender.com/api/v1/register",data)
             .then((result)=>{
                 console.log(data)
                 console.log(result)

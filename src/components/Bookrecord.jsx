@@ -14,7 +14,7 @@ const Bookrecord=()=>{
     },[location.state.bookId])
 
     const getvalue=()=>{
-        axios.get(`http://localhost:5000/api/v1/book/${location.state.bookId}`,{
+        axios.get(`https://book-list-backend-7gjb.onrender.com/api/v1/book/${location.state.bookId}`,{
             headers:{
                 "Authorization":token
             }
